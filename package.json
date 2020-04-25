@@ -1,8 +1,8 @@
 {
-  "name": "attila",
+  "name": "akira",
   "description": "Ghost Theme",
-  "demo": "https://attila.zutrinken.com",
-  "version": "2.0.1",
+  "demo": "https://zoomyale.com",
+  "version": "1.0.0",
   "engines": {
     "ghost": ">=3.0.0",
     "ghost-api": "v3"
@@ -13,9 +13,9 @@
     "mobile": "src/screenshot-mobile.jpg"
   },
   "author": {
-    "name": "Peter Amende",
-    "email": "xoxo@zutrinken.com",
-    "url": "https://zutrinken.com"
+    "name": "Yale Ling",
+    "email": "yaleyangling@gmail.com",
+    "url": "https://zoomyale.com"
   },
   "gpm": {
     "type": "theme",
@@ -31,7 +31,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/zutrinken/attila.git"
+    "url": "https://github.com/zoomyale/akira.git"
   },
   "dependencies": {
     "ghosthunter": "github:jamalneufeld/ghostHunter"

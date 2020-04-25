@@ -1164,6 +1164,8 @@ textarea {
 		i {
 			display: inline-block;
 			width: 4rem;
+			padding: inherit;
+			border: none !important;
 		}
 
 		&.nav-search {
@@ -1352,6 +1354,11 @@ textarea {
 
 		a {
 			font-size: 1.75em;
+
+			i {
+				padding: inherit;
+				border: none !important;
+			}
 		}
 
 		span {
@@ -1889,6 +1896,8 @@ textarea {
 
 .post-share a i {
 	color: inherit;
+	padding: inherit;
+	border: none !important;
 
 	&:before {
 		width: auto;
