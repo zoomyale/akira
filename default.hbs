@@ -10,7 +10,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
-	<link rel="stylesheet" media="all" href="//cdnjs.cloudflare.com/ajax/libs/Han/3.3.0/han.min.css">
+	<link rel="stylesheet" media="all" href="{{asset "css/han.min.css"}}">
 
 	{{ghost_head}}
 </head>
@@ -85,7 +85,6 @@
 
 	{{!-- Load basic scripts --}}
 	<script type="text/javascript" src="{{asset "js/script.js"}}"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/Han/3.3.0/han.min.js"></script>
 
 	{{!-- Load scripts from other template files --}}
 	{{{block "scripts"}}}

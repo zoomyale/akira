@@ -4,7 +4,6 @@
 @import "normalize";
 @import "colors";
 @import "icons";
-@import "fonts";
 @import "highlight";
 $breakpoint-large: 960px;
 $breakpoint-medium: 640px;
@@ -24,7 +23,7 @@ html.menu-active {
 }
 
 body {
-	font: 400 1em / 1.5em 'Fira Sans', sans-serif;
+	font: 400 1em / 1.5em -apple-system, "Noto Sans", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
 	color: $color-text-primary;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
@@ -49,12 +48,12 @@ textarea {
 		color: inherit;
 		text-decoration: none;
 		font-weight: 400;
-		box-shadow: inset 0 -2px 0 $color-primary;
+		box-shadow: 0 1.2px 0 $color-primary;
 		transition: all ease-out 0.1s;
 
 		&:focus,
 		&:hover {
-			box-shadow: inset 0 -3px 0 $color-primary-active;
+			box-shadow: 0 2px 0 $color-primary-active;
 		}
 	}
 
@@ -65,7 +64,7 @@ textarea {
 	h5,
 	h6 {
 		line-height: 1.25em;
-		margin: 0 0 4rem;
+		margin: 0 0 3.2rem;
 		text-rendering: optimizeLegibility;
 		color: #000;
 		@media (prefers-color-scheme: dark) {
@@ -107,14 +106,13 @@ textarea {
 	}
 
 	p {
-		font-family: 'Cardo', serif;
-		margin: 0 0 4rem;
+		margin: 0 0 2.4rem;
 	}
 
 	ol,
 	ul {
-		font-family: 'Cardo', serif;
-		margin: 0 0 4rem;
+		
+		margin: 0 0 3rem;
 		padding-left: 2em;
 		box-sizing: border-box;
 	}
@@ -137,7 +135,6 @@ textarea {
 		line-height: 1.5em;
 		text-align: right;
 		color: $color-primary;
-		font-family: 'Fira Sans', sans-serif;
 	}
 
 	ul > li:before {
@@ -166,7 +163,7 @@ textarea {
 	hr {
 		display: block;
 		height: 1px;
-		margin: 0 0 4rem;
+		margin: 0 0 3rem;
 		padding: 0;
 		background: $color-border;
 		border: 0;
@@ -176,8 +173,7 @@ textarea {
 	}
 
 	blockquote {
-		font-family: 'Cardo', serif;
-		margin: 0 0 4rem;
+		margin: 0 0 3rem;
 		padding: 0.25em 1em;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
@@ -218,8 +214,7 @@ textarea {
 	}
 
 	dl {
-		font-family: 'Cardo', serif;
-		margin: 0 0 4rem;
+		margin: 0 0 3rem;
 		padding-left: 30px;
 	}
 
@@ -269,7 +264,7 @@ textarea {
 
 	pre {
 		position: relative;
-		margin: 0 0 4rem;
+		margin: 0 0 3rem;
 		padding: 1em;
 		overflow: hidden;
 		font-family: monospace, sans-serif;
@@ -351,7 +346,7 @@ textarea {
 		position: relative;
 		width: 100%;
 		max-width: 100%;
-		margin: 0 0 4rem;
+		margin: 0 0 3rem;
 		border: 1px solid $color-border;
 		background: $color-background;
 		@media (prefers-color-scheme: dark) {
@@ -385,11 +380,11 @@ textarea {
 		display: block;
 		max-width: 100%;
 		height: auto;
-		margin: 0 0 4rem;
+		margin: 0 0 3rem;
 	}
 
 	.fluid-width-video-wrapper {
-		margin: 0 0 4rem;
+		margin: 0 0 3rem;
 	}
 }
 /* ==========================================================================
@@ -435,7 +430,7 @@ textarea {
 	}
 	// KG Image
 	.kg-image-card {
-		margin: 0 0 4rem;
+		margin: 0 0 3rem;
 		max-width: none !important;
 
 		&.kg-width-wide {
@@ -460,7 +455,7 @@ textarea {
 	}
 	// KG Gallery
 	.kg-gallery-card {
-		margin: 0 0 4rem;
+		margin: 0 0 3rem;
 		max-width: calc(72rem + 24vw) !important;
 		min-width: 100%;
 		width: calc(100vw - 4rem);
@@ -493,7 +488,7 @@ textarea {
 	}
 	// KG Embed
 	.kg-embed-card {
-		margin: 0 0 4rem;
+		margin: 0 0 3rem;
 
 		> * {
 			margin-left: auto;
@@ -503,7 +498,7 @@ textarea {
 	// KG Code
 	.kg-code-card {
 		min-width: 100%;
-		margin: 0 0 4rem;
+		margin: 0 0 3rem;
 	}
 
 	.kg-code-card pre {
@@ -512,7 +507,7 @@ textarea {
 	// KG Bookmark
 	.kg-bookmark-card {
 		width: 100%;
-		margin: 0 0 4rem;
+		margin: 0 0 3rem;
 	}
 
 	.kg-bookmark-container {
@@ -769,7 +764,7 @@ textarea {
 	margin: 0;
 	padding: 0;
 	font-weight: 700;
-	font-size: 6em;
+	font-size: 5.2rem;
 	line-height: 1em;
 	text-decoration: none;
 	color: #000;
@@ -783,11 +778,10 @@ textarea {
 }
 
 .blog-description {
-	font-family: 'Cardo', serif;
 	display: block;
-	margin-top: 1rem;
+	margin-top: 2.5rem;
 	padding: 0;
-	font-size: 3em;
+	font-size: 2rem;
 	line-height: 1.33334em;
 	color: $color-text-secondary;
 	@media (prefers-color-scheme: dark) {
@@ -852,8 +846,7 @@ textarea {
 		display: block;
 		font-size: 2em;
 		line-height: 1.5em;
-		margin: 1rem 0;
-		font-family: 'Cardo', serif;
+		margin: 1rem 0;	
 		color: $color-text-secondary;
 		@media (prefers-color-scheme: dark) {
 			color: $color-text-secondary-dark;
@@ -984,6 +977,11 @@ textarea {
 		}
 	}
 
+	#search-field {
+		font-size: 2rem;
+		line-height: 2rem;
+	}
+
 	#results {
 		padding-bottom: calc(12rem + 8vw);
 	}
@@ -1040,9 +1038,9 @@ textarea {
 	z-index: 600;
 	top: 0;
 	right: 0;
-	width: 4rem;
-	height: 4rem;
-	margin: 2rem;
+	width: 3rem;
+	height: 3rem;
+	margin: 3rem 4rem;
 	border: 1px solid $color-neutral-80;
 	border-radius: 4rem;
 	box-sizing: border-box;
@@ -1156,14 +1154,17 @@ textarea {
 		display: block;
 		width: 100%;
 		padding: 2rem 0;
-		font-size: 2em;
+		font-size: 1.6rem;
 		line-height: 2rem;
 		color: inherit;
+		font-weight: 500;
 		transition: all ease-out 0.1s;
 
 		i {
 			display: inline-block;
-			width: 4rem;
+			width: 3.4rem;
+			font-weight: 400;
+			font-size: 2rem;
 			padding: inherit;
 			border: none !important;
 		}
@@ -1211,7 +1212,7 @@ textarea {
 .nav-header .nav-wrapper {
 	display: flex;
 	max-height: calc(100vh - 6rem);
-	padding: 2rem 4rem;
+	padding: 2rem 3.6rem;
 	overflow-y: auto;
 	@media only screen and (max-width: $breakpoint-medium) {
 		background: $color-neutral-15;
@@ -1306,17 +1307,17 @@ textarea {
 	a {
 		display: block;
 		padding: 1rem 0;
-		font-size: 1.5em;
+		font-size: 1.6rem;
 		line-height: 2rem;
 		color: $color-neutral-60;
 		white-space: nowrap;
 		text-overflow: ellipsis;
 		text-decoration: none;
-		font-weight: 400;
+		font-weight: 500;
 		cursor: pointer;
 		transition: color linear 0.1s;
 		@media only screen and (max-width: $breakpoint-medium) {
-			font-size: 2em;
+			font-size: 1.6rem;
 			padding-left: 4rem;
 
 			&:before {
@@ -1533,6 +1534,14 @@ textarea {
 		color: inherit;
 		text-decoration: none;
 		font-weight: 500;
+
+		&:focus,
+		&:hover {
+			color: $color-neutral-25;
+			@media (prefers-color-scheme: dark) {
+				color: $color-neutral-90;
+			}
+		}
 	}
 }
 /* ==========================================================================
@@ -1675,9 +1684,9 @@ textarea {
 	position: relative;
 	z-index: 10;
 	margin: 0 0 2rem;
-	font-size: 4em;
+	font-size: 3.2rem;
 	line-height: 1.25em;
-	font-weight: 700;
+	font-weight: 600;
 	text-indent: -1px;
 	color: #000;
 	@media (prefers-color-scheme: dark) {
@@ -1693,7 +1702,7 @@ textarea {
 
 .post-header .post-title {
 	margin: 0 0 4rem;
-	font-size: 6em;
+	font-size: 3.8rem;
 	line-height: 1.25em;
 }
 
@@ -1702,7 +1711,6 @@ textarea {
 }
 
 .post-meta {
-	font-weight: 400;
 	font-size: 1.5rem;
 	line-height: 2rem;
 	color: $color-text-secondary;
@@ -1720,6 +1728,17 @@ textarea {
 			text-decoration: underline;
 		}
 	}
+}
+
+span.post-meta {
+	time {
+		margin-right: 1.2rem;
+	}
+
+	a {
+		margin-right: 0.5rem;
+	}
+
 }
 
 .post-header .post-meta {
@@ -1804,17 +1823,16 @@ textarea {
 
 .post-excerpt {
 	margin: 1em 0 0;
-	font-family: 'Cardo', serif;
-	font-size: 2em;
-	line-height: 1.5em;
+	font-size: 1.6rem;
+	line-height: 2.8rem;
 }
 
 .post-content {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	font-size: 2rem;
-	line-height: 3rem;
+	font-size: 1.6rem;
+	line-height: 2.8rem;
 }
 
 .post-content > * {
@@ -1834,7 +1852,7 @@ textarea {
    Post Info
    ========================================================================== */
 .post-footer {
-	margin: 12rem 0 6rem;
+	margin: 6rem 0 6rem;
 
 	&:after {
 		clear: both;
@@ -1851,76 +1869,6 @@ textarea {
 	color: $color-neutral-60;
 }
 
-.post-share {
-	position: relative;
-	max-width: 33.33333%;
-	float: right;
-	display: flex;
-	@media only screen and (max-width: $breakpoint-medium) {
-		max-width: none;
-		float: none;
-		margin-bottom: 2rem;
-	}
-}
-
-.post-share a {
-	display: block;
-	width: 3rem;
-	height: 3rem;
-	margin-right: 0.5em;
-	padding: 0;
-	font-size: 1.5em;
-	line-height: 3rem;
-	text-align: center;
-	text-decoration: none;
-	color: #FFF;
-	border-radius: 2em;
-	transition: all ease 0.2s;
-	@media only screen and (max-width: $breakpoint-medium) {
-		margin-left: 0;
-		margin-right: 0.66667em;
-	}
-
-	&:focus,
-	&:hover {
-		background-color: $color-neutral-15;
-		@media (prefers-color-scheme: dark) {
-			background-color: $color-primary-active;
-		}
-	}
-}
-
-.post-share a:last-child {
-	margin-right: 0;
-}
-
-.post-share a i {
-	color: inherit;
-	padding: inherit;
-	border: none !important;
-
-	&:before {
-		width: auto;
-		height: auto;
-	}
-}
-
-.post-share .twitter {
-	background-color: $color-social-twitter;
-}
-
-.post-share .facebook {
-	background-color: $color-social-facebook;
-}
-
-.post-share .linkedin {
-	background-color: $color-social-linkedin;
-}
-
-.post-share .email {
-	background-color: $color-social-mail;
-}
-
 .post-tags {
 	position: relative;
 	max-width: 66.66666%;
@@ -1930,7 +1878,6 @@ textarea {
 	@media only screen and (max-width: 640px) {
 		max-width: none;
 		float: none;
-		margin-bottom: 2rem;
 	}
 }
 
@@ -2111,6 +2058,10 @@ textarea {
 		width: 100%;
 	}
 
+	i {
+		border: none !important;
+	}
+
 	&:focus,
 	&:hover {
 		color: inherit;
@@ -2219,7 +2170,7 @@ textarea {
 .post-nav-excerpt {
 	height: 5rem;
 	margin: 0 0 1rem;
-	font-family: 'Cardo', serif;
+	
 	font-size: 1.75em;
 	line-height: 2.5rem;
 	display: -webkit-box;

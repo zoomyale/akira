@@ -54,22 +54,6 @@
 
 			<section class="post-footer">
 
-				<div class="post-share">
-					<span class="post-info-label">{{t "Share"}}</span>
-					<a title="Twitter" class="twitter" href="https://twitter.com/share?text={{title}}&url={{url absolute="true"}}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-						<i class="icon icon-twitter"></i><span class="hidden">Twitter</span>
-					</a>
-					<a title="Facebook" class="facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-						<i class="icon icon-facebook"></i><span class="hidden">Facebook</span>
-					</a>
-					<a title="LinkedIn" class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{url absolute="true"}}/&amp;title={{title}}" onclick="window.open(this.href, 'linkedin-share', 'width=930,height=720');return false;">
-						<i class="icon icon-linkedin"></i><span class="hidden">LinkedIn</span>
-					</a>
-					<a title="Email" class="email" href="mailto:?subject={{title}}&amp;body={{url absolute="true"}}">
-						<i class="icon icon-mail"></i><span class="hidden">Email</span>
-					</a>
-				</div>
-
 				{{#if tags}}
 				<aside class="post-tags">
 					<span class="post-info-label">{{t "Topic"}}</span>
@@ -99,7 +83,7 @@
 							<i class="icon icon-arrow-left"></i>
 							<h2 class="post-nav-title">{{title}}</h2>
 							<p class="post-nav-excerpt">{{excerpt words="12"}}&hellip;</p>
-							<p class="post-nav-meta"><time datetime="{{date format='DD-MM-YYYY'}}">{{date format="DD MMM YYYY"}}</time></p>
+							<p class="post-nav-meta"><time datetime="{{date format='DD-MM-YYYY'}}">{{date format="YYYY-MM-DD"}}</time></p>
 						</section>
 					</a>
 				{{/next_post}}
@@ -109,7 +93,7 @@
 							<i class="icon icon-arrow-right"></i>
 							<h2 class="post-nav-title">{{title}}</h2>
 							<p class="post-nav-excerpt">{{excerpt words="12"}}&hellip;</p>
-							<p class="post-nav-meta"><time datetime="{{date format='DD-MM-YYYY'}}">{{date format="DD MMM YYYY"}}</time></p>
+							<p class="post-nav-meta"><time datetime="{{date format='DD-MM-YYYY'}}">{{date format="YYYY-MM-DD"}}</time></p>
 						</section>
 					</a>
 				{{/prev_post}}

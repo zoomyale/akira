@@ -1,4 +1,4 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
   'use strict';
   require('load-grunt-tasks')(grunt, {
     pattern: ['grunt-*']
@@ -17,7 +17,8 @@ module.exports = function(grunt) {
         '<%= config.jsSrcDir %>/libs/jquery.history.js',
         '<%= config.jsSrcDir %>/libs/highlight.pack.js',
         '<%= config.jsSrcDir %>/libs/nprogress.js',
-        'node_modules/ghosthunter/dist/jquery.ghosthunter.js'
+        'node_modules/ghosthunter/dist/jquery.ghosthunter.js',
+        'node_modules/han-css/dist/han.min.js'
       ]
     },
     copy: {
@@ -27,6 +28,18 @@ module.exports = function(grunt) {
           src: '*',
           cwd: 'src/font/',
           expand: true
+        },
+        {
+          dest: 'assets/css/font/',
+          src: '*',
+          cwd: 'node_modules/han-css/dist/font/',
+          expand: true
+        },
+        {
+          dest: 'assets/css/',
+          src: 'han.min.css',
+          cwd: 'node_modules/han-css/dist/',
+          expand: true
         }]
       },
       dist: {
@@ -34,6 +47,18 @@ module.exports = function(grunt) {
           dest: 'assets/font/',
           src: '*',
           cwd: 'src/font/',
+          expand: true
+        },
+        {
+          dest: 'assets/css/font/',
+          src: '*',
+          cwd: 'node_modules/han-css/dist/font/',
+          expand: true
+        },
+        {
+          dest: 'assets/css/',
+          src: 'han.min.css',
+          cwd: 'node_modules/han-css/dist/',
           expand: true
         }]
       }
