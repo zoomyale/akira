@@ -129,10 +129,10 @@ textarea {
 	ul > li:before {
 		position: absolute;
 		width: 1.5em;
-		margin-left: -2em;
-		font-size: 1em;
+		margin-left: -2.3em;
+		font-size: 0.9em;
 		font-weight: 500;
-		line-height: 1.5em;
+		line-height: 2.1em;
 		text-align: right;
 		color: $color-primary;
 	}
@@ -844,7 +844,7 @@ textarea {
 
 	.archive-description {
 		display: block;
-		font-size: 2em;
+		font-size: 1.6em;
 		line-height: 1.5em;
 		margin: 1rem 0;	
 		color: $color-text-secondary;
@@ -1036,13 +1036,8 @@ textarea {
 			border: none !important;
 		}
 
-		&.nav-search {
-			width: auto;
-			text-align: right;
-
-			span {
-				display: none;
-			}
+		&.nav-menu {
+			margin-left: -0.8rem;
 		}
 
 		&:focus,
@@ -1079,7 +1074,7 @@ textarea {
 .nav-header .nav-wrapper {
 	display: flex;
 	max-height: calc(100vh - 6rem);
-	padding: 2rem 3.5rem;
+	padding: 2rem 3rem;
 	overflow-y: auto;
 	@media only screen and (max-width: $breakpoint-medium) {
 		background: $color-neutral-15;
