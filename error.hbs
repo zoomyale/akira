@@ -1,0 +1,34 @@
+{{!< default}}
+
+<header class="post-header">
+	<div class="inner">
+			<h1 class="post-title">404 😔</h1>
+	</div>
+</header>
+
+<div class="container">
+
+	<main class="content" role="main">
+		<article>
+			<div class="inner">
+
+				<section class="post-content">
+
+					<p>{{t "Page not found. Go to "}}<a href="/">{{t "Homepage."}}</a></p>
+
+				</section>
+
+			</div>
+		</article>
+	</main>
+
+</div>
+
+
+{{#contentFor "scripts"}}
+<script>
+	$(document).ready(function () {
+		document.title = "404";
+  });
+</script>
+{{/contentFor}}

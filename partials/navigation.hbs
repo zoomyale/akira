@@ -1,5 +1,15 @@
-<ul role="navigation" aria-label="Navigation">
-	{{#foreach navigation}}
-		<li class="nav-{{slug}}{{#if current}} active{{/if}}" role="presentation"><a href="{{url absolute="true"}}"><span>{{label}}</span></a></li>
-	{{/foreach}}
-</ul>
+{{#if isSecondary}}
+    {{#foreach navigation}}
+		<li class="nav-{{slug}}">
+			<a title="{{label}}" href="{{url}}" target="_blank">
+				<i class="icon icon-{{slug}}"></i><span>{{label}}</span>
+			</a>
+		</li>
+        {{/foreach}}
+{{else}}
+    <ul role="navigation" aria-label="Navigation">
+		{{#foreach navigation}}
+			<li class="nav-{{slug}}{{#if current}} active{{/if}}" role="presentation"><a href="{{url absolute="true"}}"><span>{{label}}</span></a></li>
+		{{/foreach}}
+	</ul>
+{{/if}}

@@ -34,7 +34,6 @@
     "url": "https://github.com/zoomyale/akira.git"
   },
   "dependencies": {
-    "ghosthunter": "github:jamalneufeld/ghostHunter",
     "han-css": "^3.3.0"
   },
   "devDependencies": {
