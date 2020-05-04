@@ -23,7 +23,7 @@ html.menu-active {
 }
 
 body {
-	font: 400 1em / 1.5em -apple-system, "Noto Sans", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+	font: 400 1em / 1.5em "Noto Sans", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
 	color: $color-text-primary;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
@@ -1212,7 +1212,7 @@ textarea {
 .nav-header .nav-wrapper {
 	display: flex;
 	max-height: calc(100vh - 6rem);
-	padding: 2rem 3.6rem;
+	padding: 2rem 3.5rem;
 	overflow-y: auto;
 	@media only screen and (max-width: $breakpoint-medium) {
 		background: $color-neutral-15;
@@ -1433,9 +1433,13 @@ textarea {
 .nav-footer {
 	position: relative;
 	z-index: 20;
-	padding-top: calc(12rem + 8vw);
+	padding-top: calc(10rem + 4vw);
 	padding-bottom: 4rem;
 	margin-top: auto;
+	@media only screen and (max-width: $breakpoint-medium) {
+		padding-top: calc(8rem + 2vw);
+		padding-bottom: 3rem;
+	}
 
 	.inner {
 		max-width: none;
@@ -1587,6 +1591,9 @@ textarea {
 .post-header {
 	position: relative;
 	padding: calc(16rem + 4vw) 0 calc(2rem + 2vw);
+	@media only screen and (max-width: $breakpoint-medium) {
+		padding: calc(12rem + 4vw) 0 calc(2rem + 2vw);
+	}
 }
 
 .post-header.has-cover {
@@ -1623,12 +1630,12 @@ textarea {
 		content: '';
 		position: absolute;
 		width: 100%;
-		height: 66.666%;
+		height: 60%;
 		left: 0;
 		bottom: 0;
 		z-index: 8;
-		background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.333) 100%);
-		background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.333) 100%);
+		background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) 100%);
+		background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) 100%);
 	}
 }
 
@@ -2261,6 +2268,7 @@ span.post-meta {
 	color: inherit;
 	font-size: 1.33334em;
 	line-height: 0.75em;
+	border: none !important;
 
 	&:before {
 		position: relative;
