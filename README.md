@@ -1,89 +1,99 @@
-# Attila
+# Akira
 
-A content focused responsive theme for [Ghost](https://github.com/tryghost/ghost/). See a demo at: [attila.zutrinken.com](https://attila.zutrinken.com/)
+一个基于 [Attila](https://github.com/zutrinken/attila) 的 [Ghost](https://github.com/tryghost/ghost/) 中文主题，和 Attila 一样，是主张突出内容的简约风格主题。具体效果可参见 [我的博客](https://zoomyale.com/)。
 
-If you like this theme and want to support future development you can become a [financial contributor](https://paypal.me/zutrinken).
+Akira 在原主题的基础上，主要针对中文显示效果做了调整，包括中文排版、样式优化，并且增加了社交账号配置，精简了主题包，删除不适用中文主题的文件，以提升加载速度。
 
-## Screenshots
+## 截图
 
 <table>
 <tr>
-<td valign="top">
-<img src="https://raw.githubusercontent.com/zutrinken/attila/master/src/screenshot-desktop.jpg" />
+<td valign="center">
+<img src="https://i.loli.net/2020/05/06/a1URlrTwDtdoOWH.png" />
 </td>
-<td valign="top">
-<img src="https://raw.githubusercontent.com/zutrinken/attila/master/src/screenshot-mobile.jpg" />
+<td valign="center">
+<img src="https://i.loli.net/2020/05/06/8U6qlaApxgtmHQw.png" />
 </td>
 </tr>
 </table>
 
-## Features
+## 特性
 
-* Responsive layout
-* Dark Mode
-* Search
-* Post reading progress
-* Code highlight including line numbers
-* Disqus support
+Akira 优化后独有的特性：
 
-## Localization
+* 支持[汉字标准格式](https://hanzi.pro/)
+* 为中文展示优化的样式
+* 适配各系统的中文黑体
+* 可自定义的社交链接及图标
 
-* __English__
-* __German__
-* __Spanish__
-* __French__ by [robink](https://github.com/robink)
-* __Italian__ by [fmaida](https://github.com/fmaida)
-* __Norwegian__ by [arthurnoerve](https://github.com/arthurnoerve)
-* __Chinese__ by [hao-lee](https://github.com/hao-lee)
-* __Indonesian__ by [simplyeazy](https://github.com/simplyeazy)
-* __Romanian__ by [cdorin93](https://github.com/cdorin93)
-* __Russian__ by [schamberg97](https://github.com/schamberg97)
-* __Turkish__ by [cgrgrbz](https://github.com/cgrgrbz)
-* __Swedish__ by [martenj77](https://github.com/martenj77)
-* __Czech__ by [lunakv](https://github.com/lunakv)
-* __Portuguese__ by [matheusvanzan](https://github.com/matheusvanzan)
+原主题支持的特性：
 
-## Setup [Disqus](https://disqus.com/)
+* 响应式设计
+* 暗黑模式（跟随系统自动切换）
+* 文章阅读进度
+* 带行号的代码块
+* 支持 [Disqus](https://disqus.com/)
 
-1. Go to __Code injection__.  
-2. Add this to __Blog Header__:  
+## 设置语言
+
+Akira 是为中文展示特别优化的主题，换言之，中文以外语言的展示效果无法保证。为保证样式展示正常，请务必在 Ghost 后台 SETTINGS > General > Publication Language 中，将语言设置为 `zh`。
+
+## 社交账号配置
+
+![icons.png](https://i.loli.net/2020/05/06/vAd7U4QtcbKuCn9.png)
+
+Akira 支持在桌面端展示社交账号及图表，具体配置方法如下。
+
+1. 进入 Ghost 后台的 __Design__
+2. 在 __Secondary Navigation__ 中配置标签（即导航项名称栏）和社交链接，目前所有支持的社交账号有：
+
+| 社交账号          | 标签（不区分大小写）    |
+|---------------|---------------|
+| Twitter       | twitter       |
+| Facebook      | facebook      |
+| Github        | github        |
+| LinkedIn      | linkedin      |
+| StackOverflow | stackoverflow |
+| Instagram     | instagram     |
+| Tumblr        | tumblr        |
+| Dribbble      | dribbble      |
+| Behance       | behance       |
+| Slack         | slack         |
+| Steam         | steam         |
+| Reddit        | reddit        |
+| GitLab        | gitlab        |
+| Telegram      | telegram      |
+| Podcast       | podcast       |
+| 微信            | wechat        |
+| 新浪微博          | weibo         |
+
+
+## 设置 [Disqus](https://disqus.com/)
+
+1. 进入 Ghost 后台的 __Code injection__
+2. 把这段代码加到 __Blog Header__（注意替换引号中内容）:  
 ````
 <script>var disqus = 'YOUR_DISQUS_SHORTNAME';</script>
 ````
 
-## Setup search
+## 开发
 
-The search function is build with [ghostHunter](https://github.com/jamalneufeld/ghostHunter):
-
-1. Go to __Integrations__.  
-2. Choose __Add custom integration__, name it `ghostHunter` and choose __Create__. Copy the generated Content API Key.  
-3. Go to __Code injection__.  
-4. Add this to __Blog Header__:  
-````
-<script>
-  var ghosthunter_key = 'PASTE_THE_GENERATED_KEY_HERE';
-  //optional: set your custom ghost_root url, default is "/ghost/api/v2"
-  var ghost_root_url = '/ghost/api/v2';
-</script>
-````
-## Development
-
-Install [Grunt](https://gruntjs.com/getting-started/):
+安装 [Grunt](https://gruntjs.com/getting-started/)：
 
 	npm install -g grunt-cli
 
-Install Grunt dependencies:
+安装 Grunt 依赖：
 
 	npm install
 
-Build Grunt project:
+构造 Grunt 项目：
 
 	grunt build
 
-The compress Grunt task packages the theme files into `dist/<theme-name>.zip`, which you can then upload to your site.
+Grunt 打包后的主题文件会写入到 `dist/<theme-name>.zip`，你可以直接将该 zip 文件上传到 Ghost 主题中。
 
 	grunt compress
 
-## Copyright & License
+## License
 
-Copyright (C) 2015-2020 Peter Amende - Released under the [MIT License](https://github.com/zutrinken/attila/blob/master/LICENSE).
+[MIT License](https://github.com/zutrinken/attila/blob/master/LICENSE)

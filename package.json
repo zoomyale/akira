@@ -9,8 +9,8 @@
   },
   "license": "MIT",
   "screenshots": {
-    "desktop": "src/screenshot-desktop.jpg",
-    "mobile": "src/screenshot-mobile.jpg"
+    "desktop": "src/screenshot-desktop.png",
+    "mobile": "src/screenshot-mobile.png"
   },
   "author": {
     "name": "Yale Ling",
