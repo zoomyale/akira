@@ -1,6 +1,8 @@
 # Akira
 
-一个基于 [Attila](https://github.com/zutrinken/attila) 的 [Ghost](https://github.com/tryghost/ghost/) 中文主题，和 Attila 一样，是主张突出内容的简约风格主题。具体效果可参见 [我的博客](https://zoomyale.com/)。
+一个基于 [Attila](https://github.com/zutrinken/attila) 的 [Ghost](https://github.com/tryghost/ghost/) 中文主题，和 Attila 一样，是主张突出内容的简约风格主题。
+
+具体效果可参见 [我的博客](https://zoomyale.com/)。
 
 Akira 在原主题的基础上，主要针对中文显示效果做了调整，包括中文排版、样式优化，并且增加了社交账号配置，精简了主题包，删除不适用中文主题的文件，以提升加载速度。
 
@@ -36,7 +38,9 @@ Akira 优化后独有的特性：
 
 ## 设置语言
 
-Akira 是为中文展示特别优化的主题，换言之，中文以外语言的展示效果无法保证。为保证样式展示正常，请务必在 Ghost 后台 SETTINGS > General > Publication Language 中，将语言设置为 `zh`。
+Akira 是为中文展示特别优化的主题，换言之，中文以外语言的展示效果无法保证。
+
+为保证样式展示正常，请务必在 Ghost 后台 SETTINGS > General > Publication Language 中，将语言设置为 `zh`。
 
 ## 社交账号配置
 
