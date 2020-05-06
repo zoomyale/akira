@@ -8,20 +8,11 @@
 
 ## 截图
 
-<table>
-<tr>
-<td valign="center">
-<img src="https://i.loli.net/2020/05/06/a1URlrTwDtdoOWH.png" />
-</td>
-<td valign="center">
-<img src="https://i.loli.net/2020/05/06/8U6qlaApxgtmHQw.png" />
-</td>
-</tr>
-</table>
+![screenshot.jpg](https://i.loli.net/2020/05/06/CqUyxLacTS4zifP.jpg)
 
 ## 特性
 
-Akira 优化后独有的特性：
+优化后独有的特性：
 
 * 支持[汉字标准格式](https://hanzi.pro/)
 * 为中文展示优化的样式
