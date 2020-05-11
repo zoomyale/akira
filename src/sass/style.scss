@@ -178,7 +178,6 @@ textarea {
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
 		border-left: 0.25em solid $color-primary;
-		font-style: italic;
 		font-weight: 400;
 	}
 
@@ -198,7 +197,9 @@ textarea {
 
 	em,
 	i {
-		font-style: italic;
+		text-emphasis: filled circle $color-primary !important;
+		-webkit-text-emphasis: filled circle $color-primary !important;
+		-moz-text-emphasis: filled circle $color-primary !important;
 	}
 
 	b,
