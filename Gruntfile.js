@@ -16,7 +16,6 @@ module.exports = function (grunt) {
         '<%= config.jsSrcDir %>/libs/jquery.fitvids.js',
         '<%= config.jsSrcDir %>/libs/jquery.history.js',
         '<%= config.jsSrcDir %>/libs/highlight.pack.js',
-        '<%= config.jsSrcDir %>/libs/nprogress.js',
         'node_modules/han-css/dist/han.min.js'
       ]
     },
