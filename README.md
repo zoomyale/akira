@@ -82,15 +82,15 @@ Akira 支持配置社交账号及图标，方法如下。
 
 ````
 <script>
-	var gitalk = new Gitalk({
-        clientID: 'GitHub Application Client ID',
-		clientSecret: 'GitHub Application Client Secret',
-		repo: 'GitHub repo',
-		owner: 'GitHub repo owner',
-		admin: ['GitHub repo owner and collaborators, only these guys can initialize github issues'],
-		id: location.pathname,
-        language: 'zh-CN'
-    });
+  var gitalk = new Gitalk({
+    clientID: 'GitHub Application Client ID',
+    clientSecret: 'GitHub Application Client Secret',
+    repo: 'GitHub repo',
+    owner: 'GitHub repo owner',
+    admin: ['GitHub repo owner and collaborators, only these guys can initialize github issues'],
+    id: location.pathname,
+    language: 'zh-CN'
+  });
 </script>
 ````
 
