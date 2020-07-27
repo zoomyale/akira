@@ -38,6 +38,12 @@ module.exports = function (grunt) {
           src: 'han.min.css',
           cwd: 'node_modules/han-css/dist/',
           expand: true
+        },
+        {
+          dest: 'assets/js/',
+          src: 'gitalk.js',
+          cwd: 'node_modules/gitalk/dist/',
+          expand: true
         }]
       },
       dist: {

@@ -2,7 +2,7 @@
   "name": "akira",
   "description": "Ghost Theme",
   "demo": "https://zoomyale.com",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "engines": {
     "ghost": ">=3.0.0",
     "ghost-api": "v3"
@@ -34,6 +34,7 @@
     "url": "https://github.com/zoomyale/akira.git"
   },
   "dependencies": {
+    "gitalk": "^1.6.2",
     "han-css": "^3.3.0"
   },
   "devDependencies": {

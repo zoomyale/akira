@@ -19,6 +19,7 @@
 * 适配各系统的中文黑体
 * 可自定义的社交账号链接及图标
 * 带导航的 404 页
+* 支持 [Gitalk](https://gitalk.github.io/)
 
 原主题支持的特性：
 
@@ -72,6 +73,29 @@ Akira 支持配置社交账号及图标，方法如下。
 ````
 <script>var disqus = 'YOUR_DISQUS_SHORTNAME';</script>
 ````
+
+## 设置 [Gitalk](https://gitalk.github.io/)
+
+1. 创建 GitHub Application，如果没有点击[这里申请](https://github.com/settings/applications/new)，`Authorization callback URL` 填写 Blog 域名
+2. 进入 Ghost 后台的 __Code injection__
+3. 把配置代码加到 __Blog Footer__，详细设置项说明可参考[官方文档](https://github.com/gitalk/gitalk/blob/master/readme-cn.md)（注意替换引号中内容）:  
+
+````
+<script>
+	var gitalk = new Gitalk({
+        clientID: 'GitHub Application Client ID',
+		clientSecret: 'GitHub Application Client Secret',
+		repo: 'GitHub repo',
+		owner: 'GitHub repo owner',
+		admin: ['GitHub repo owner and collaborators, only these guys can initialize github issues'],
+		id: location.pathname,
+        language: 'zh-CN'
+    });
+</script>
+````
+
+另外，需注意若同时设置了 Disqus 和 Gitalk，会优先使用 Disqus。
+
 
 ## 主题开发
 

@@ -67,6 +67,7 @@
 			<section class="post-comments">
 				<a id="show-disqus" class="post-comments-activate">{{t "Show Comments"}}</a>
 			   <div id="disqus_thread"></div>
+			   <div id="gitalk-container"></div>
 			</section>
 
       {{#if @labs.subscribers}}
@@ -109,6 +110,7 @@
 
 {{!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs --}}
 {{#contentFor "scripts"}}
+<script type="text/javascript" src="{{asset "js/gitalk.js"}}"></script>
 <script>
   $(document).ready(function () {
 		var viewport = $(window);
@@ -158,13 +160,15 @@
 	      readingProgress();
 	    }
 	  });
-		// Check if disqus is defined by code injection
-		if (typeof disqus === 'undefined') {
+		// Check if disqus and gitalk is defined by code injection
+		if (typeof disqus === 'undefined' && typeof gitalk === 'undefined') {
 			// hide comment section
 	    $('.post-comments').css({
 	      'display': 'none'
 	    });
-	  } else {
+	  } 
+	    // Activate disqus first
+	    else if (typeof disqus !== 'undefined') {
 	    $('#show-disqus').on('click', function() {
 	      $.ajax({
 	        type: "GET",
@@ -172,6 +176,13 @@
 	        dataType: "script",
 	        cache: true
 	      });
+	      $(this).parent().addClass('activated');
+	    });
+	  } 
+	    // Activate gitalk
+	    else {
+	    $('#show-disqus').on('click', function() {
+	      gitalk.render('gitalk-container')
 	      $(this).parent().addClass('activated');
 	    });
 	  }
